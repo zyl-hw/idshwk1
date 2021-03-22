@@ -1,1 +1,1 @@
-alert tcp any any -> any 8080 (msg:“TEST ALERT”; flow:to_server,established; content:“I am IDS Homework I”; offset:100; depth:100)  
+alert tcp any any -> any 8080 (flags:A; msg:"TEST ALERT"; content:"I am IDS Homework I"; offset:99; depth:101; sid:10000000001;)
